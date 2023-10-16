@@ -1,11 +1,343 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeLi-AR | Presentación</title>
+  
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MeLi-AR</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/product.css">
 </head>
+
 <body>
-    <h1>asd</h1>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+    <symbol id="arrow-right-circle" viewBox="0 0 16 16">
+      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+    </symbol>
+  </svg>
+
+
+  <div class="col-lg-8 mx-auto p-4 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <a class="d-flex align-items-center text-body-emphasis text-decoration-none">
+        <img src="assets/img/ar.png" alt="" width="40" height="40">
+        <span class="fs-4">Proyecto MeLi-AR</span>
+      </a>
+    </header>
+
+    <main>
+      <h1 class="text-body-emphasis">Visualizar productos de Mercado Libre en realidad aumentada</h1>
+      <p class="fs-5 col md-12">Mediante la provisión de la URL de una publicación, el prototipo procesa lás imágenes del producto, recrea el objeto en 3D y lo visualiza en realidad aumentada con la cámara del celular.</p>
+      <p class="fs-5 col-md-12">Dejé el código abierto en un cuaderno de Jupyter en Google Colab para facilitar el acceso y prueba del prototipo.</p>
+
+      <br>
+      <div class="col-12 text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="https://colab.research.google.com/drive/1A-UoxgJeYRNqWrxP4yH36ATeaugg32sc?usp=sharing" type="button" target="_blank" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-code" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+              </svg>&nbsp;
+            Ir a Google Colab</a>              
+          </div>
+
+        </div>
+        <div class="row">
+          <small>*Me pareció apropiado programar y comentar todo en inglés, ya que</small>
+        </div>
+        <div class="row">
+          <small>observé que las APIs oficiales de Mercado Libre están en ese idioma.</small>
+        </div>
+      </div>
+
+      <br>
+      <hr class="col-3 col-md-2 mb-5">
+      
+      <h3 class="text-body-emphasis">Demos</h3>      
+
+      <div id="carouselDemos" class="carousel carousel-dark slide"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselDemos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselDemos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselDemos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner center">
+          <div class="carousel-item active">
+            <section class="product">
+              <div class="product__photo">
+                  <div class="photo-container">
+                      <div class="photo-main" style="background-image: url('assets/img/demo/MLA1470395232.webp');">
+                          <img src="assets/img/demo/MLA1470395232.png" alt="green apple slice">                  
+                      </div>              
+                  </div>
+              </div>
+              <div class="product__info">
+                  <div class="title">
+                      <span>Nuevo | +100 vendidos</span>
+                  </div>
+                  <div class="title">
+                      <h1>Zapatillas Lite Racer 3.0 Hp6102 Adidas</h1>
+                      <span>ID: MLA1470395232</span>
+                  </div>
+                  
+                  <h2>
+                      $ 40.999
+                  </h2>          
+                  <div class="description">
+                      <h5>VISUALIZAR EN REALIDAD AUMENTADA</h5>
+                      <img src="assets/img/demo/MLA1470395232_qr.jpg" width="200px;" height="200px;" alt="">
+                  </div>     
+                  <div class="title">     
+                    <span>https://articulo.mercadolibre.com.ar/MLA-1470395232-zapatillas-lite-racer-30-hp6102-adidas-_JM</span>                    
+                  </div>
+              </div>
+            </section>      
+          </div>
+          <div class="carousel-item">            
+            <section class="product">
+              <div class="product__photo">
+                  <div class="photo-container">
+                      <div class="photo-main" style="background-image: url('./assets/img/demo/MLA864465374.webp');">
+                          <img src="assets/img/demo/MLA864465374.png" alt="green apple slice">                  
+                      </div>              
+                  </div>
+              </div>
+              <div class="product__info">
+                  <div class="title">
+                      <span>Nuevo  |  2 vendidos</span>
+                  </div>
+                  <div class="title">
+                      <h1>Busto Escultura</h1>
+                      <h1 class="hidden">_</h1>
+                      <span>ID: MLA864465374</span>
+                  </div>
+                  
+                  <h2>
+                      $ 172.630
+                  </h2>          
+                  <div class="description">
+                      <h5>VISUALIZAR EN REALIDAD AUMENTADA</h5>
+                      <img src="assets/img/demo/MLA864465374_qr.jpg" width="200px;" height="200px;" alt="">
+                  </div>     
+                  <div class="title">     
+                    <span>https://articulo.mercadolibre.com.ar/MLA-864465374-busto-escultura-_JM</span>
+                    <span class="hidden"><br>_</span>
+                  </div>
+              </div>
+            </section>    
+          </div>
+          <div class="carousel-item">            
+            <section class="product">
+              <div class="product__photo">
+                  <div class="photo-container">
+                      <div class="photo-main" style="background-image: url('assets/img/demo/MLA1174321135.webp');">
+                          <img src="assets/img/demo/MLA1174321135.png" alt="green apple slice">                  
+                      </div>              
+                  </div>
+              </div>
+              <div class="product__info">
+                  <div class="title">
+                      <span>Usado</span>
+                  </div>
+                  <div class="title">
+                      <h1>The C++ Standard Library - Nicolai M. Josuttis</h1>
+                      <span>ID: MLA1174321135</span>
+                  </div>
+                  
+                  <h2>
+                      $ 9.000
+                  </h2>          
+                  <div class="description">
+                      <h5>VISUALIZAR EN REALIDAD AUMENTADA</h5>
+                      <img src="assets/img/demo/MLA1174321135_qr.jpg" width="200px;" height="200px;" alt="">
+                  </div>     
+                  <div class="title">     
+                    <span>https://articulo.mercadolibre.com.ar/MLA-1174321135-the-c-standard-library-nicolai-m-josuttis-_JM</span>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <hr class="col-3 col-md-2 mb-5">
+
+      <h2 class="text-body-emphasis">¿Cómo funciona?</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-braces"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="fs-3 text-body-emphasis">Consulta</h4>
+            <p>Se parsea el id de la publicación de la URL, el cual se utiliza como parámetro en la API oficial de Mercado Libre para obtener las imágenes del producto.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cpu-fill"
+              viewBox="0 0 16 16">
+              <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+              <path
+                d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-3 text-body-emphasis">Procesamiento</h3>
+            <p>Haciendo uso de un algoritmo de inteligencia artificial de vanguardia, se procesa la imágen y se recrea
+              la figura geométrica del producto en malla poligonal.</p>
+          </div>
+          
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-3 text-body-emphasis">Renderización</h3>
+            <p>Se envía la malla al servidor, y se genera un código QR para escanear y consecuentemente visualizar el producto con la cámara del
+              celular en realidad aumentada.</p>
+          </div>
+        </div>        
+      </div>
+      
+
+      <hr class="col-3 col-md-2 mb-5">
+
+      <div class="row g-5">
+        <div class="col-md-12">
+          <h2 class="text-body-emphasis">Agradecimientos</h2>
+          <p>Todos los repositorios, artículos científicos y bibliotecas que hicieron este proyecto posible.</p>
+          <ul class="list-unstyled ps-0">
+            <li>
+              <a class="icon-link mb-1" href="https://www-sop.inria.fr/reves/Basilic/2023/KKLD23/" rel="noopener"
+                target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                3D Gaussian Splatting for Real-Time Radiance Field Rendering
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://arxiv.org/abs/2309.16653" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://github.com/threestudio-project/threestudio" rel="noopener"
+                target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                threestudio
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://arxiv.org/abs/2306.17843" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors
+              </a>
+            </li> 
+            <li>
+              <a class="icon-link mb-1" href="https://www.w3.org/TR/webxr/" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                WebXR
+              </a>
+            </li>
+            <li>           
+              <a class="icon-link mb-1" href="https://threejs.org/" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Three.JS
+              </a>
+            </li>
+          </ul>
+          
+          <p>A pesar de que no son parte del resultado final, los siguientes recursos fueron parte de mi investigación y prototipados tempranos.</p>
+          <ul  class="list-unstyled ps-0">
+            <li>
+              <a class="icon-link mb-1" href="https://github.com/alicevision/Meshroom" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Meshroom
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://aframe.io/" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                A-FRAME
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://github.com/AR-js-org/AR.js" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                AR.js - Augmented Reality on the Web
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-5 my-5 text-body-secondary border-top text-center">
+      &copy; 2023 Luciano Cantero // cantero.dev@gmail.com
+    </footer>
+  </div>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
